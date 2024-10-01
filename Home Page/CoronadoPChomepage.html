@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222222;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #000000;
+            padding: 2px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 25;
+        }
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            z-index: 20;
+        }
+        .form-container {
+            background-color: #222222;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        .description {
+            position: absolute;
+            top: 75%; /* Adjusted position for paragraph */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1em; /* Font size for paragraph */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            z-index: 20;
+        }
+        img {
+            max-width: fit-content%;
+            max-height: 500px; /* Set your desired max height */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity to darken */
+            z-index: 1; /* Place it behind text */
+        }
+        h1 {
+            color: #ffffff;
+            z-index: 26;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coronado PC</h1>
+    </header>
+
+    <div class="image-container">
+        <img src="homepageBackground.jpg" alt="Description of Image">
+        <div class="header-title">Coronado PC</div>
+        <div class="description">Free Delivery in San Diego County, 8% Build Fee.     Scroll down to get started with your new custom-built machine</div>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="form-container">
+        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="8LGpJ5LKVEW4PrFaOXHuFw" data-form="1"></script>
+    </div>
+</body>
+</html>
+
+
